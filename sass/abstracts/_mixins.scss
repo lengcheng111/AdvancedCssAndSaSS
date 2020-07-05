@@ -5,3 +5,18 @@
         display: table;
     }
 }
+
+@mixin gridContainer {
+    max-width: $grid-width;
+    margin: auto;
+    display: grid;
+    grid-column-gap: $gutter-horizontal;
+    &__left {
+      &__left__block {
+          // not implement yet!
+      }
+    }
+    &__right {
+      // not implement yet!
+    }
+  }

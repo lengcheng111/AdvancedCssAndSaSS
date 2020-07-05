@@ -1,5 +1,5 @@
 .header {
-    height: 97vh;
+    height: 95vh;
     background-image: linear-gradient(
         to right bottom,
         hsla(111, 55%, 64%, 0.808),
@@ -21,11 +21,10 @@
       transform: translate(-50%, -50%);
       text-align: center;
     }
-    &__logo_box {
+    &__logo-box {
       position: absolute;
       top: 4rem;
       left: 4rem;
+      
     }
-  
-  
   }
