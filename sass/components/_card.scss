@@ -1,0 +1,46 @@
+.card {
+    perspective: 156rem;
+    -moz-perspective: 156rem;
+    position: relative;
+    
+    &__side {
+        background-color: orangered;
+        color: $color-white;
+        font-size: 2rem;
+        height: 50rem;
+        transition: all .8s;
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+
+        &--font {
+            background-color: orangered;
+        }
+        &--back {
+            background-color: green;
+            transform: rotateY(180deg);
+            -webkit-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+            -ms-transform: rotateY(180deg);
+            -o-transform: rotateY(180deg);
+        }
+    }
+
+    &:hover &__side--font {
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
+        -webkit-transform: rotateY(0);
+        -moz-transform: rotateY(0);
+        -ms-transform: rotateY(0);
+        -o-transform: rotateY(0);
+}
+}

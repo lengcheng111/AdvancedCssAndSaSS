@@ -224,6 +224,43 @@ u-margin-bottom-small {
     -webkit-background-clip: text;
     color: transparent; }
 
+.card {
+  perspective: 156rem;
+  -moz-perspective: 156rem;
+  position: relative; }
+  .card__side {
+    background-color: orangered;
+    color: #ffffff;
+    font-size: 2rem;
+    height: 50rem;
+    transition: all .8s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden; }
+    .card__side--font {
+      background-color: orangered; }
+    .card__side--back {
+      background-color: green;
+      transform: rotateY(180deg);
+      -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
+      -ms-transform: rotateY(180deg);
+      -o-transform: rotateY(180deg); }
+  .card:hover .card__side--font {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0);
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0); }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(128, 214, 113, 0.808), rgba(40, 180, 133, 0.822)), url(../img/hero.jpg);
@@ -283,3 +320,10 @@ u-margin-bottom-small {
   display: grid;
   grid-column-gap: 6rem;
   grid-template-columns: 1fr 1fr 1fr 1fr; }
+
+.grid-container-tours {
+  max-width: 114rem;
+  margin: auto;
+  display: grid;
+  grid-column-gap: 6rem;
+  grid-template-columns: 1fr 1fr 1fr; }
